@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fb7a00">
+	<link rel="shortcut icon"  type="image/x-icon" href="favico.png">
+	<title>avidalia</title>
+	<meta name="description" content="pluscolor">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<!-- <link rel="shortcut icon" href="img/qr_favicon.png" type="image/png"> -->
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/> -->
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/> -->
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="head">
+						<div class="logotype">
+							<img src="img/logotype.png" alt="logotype">
+						</div>
+						<div class="menu">
+							<div class="block-btn">
+								<a href="#" class="btn-border-white">
+									colaboremos
+								</a>
+							</div>
+							<label class="btn-check">
+								<input type="checkbox">
+								<div class="btn-menu">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line short"></span>
+								</div>
+								<div class="block-menu">
+									<div class="max-width">
+										<div class="left">
+											<div class="list location">
+												<h4>
+													BARCELONA 
+												</h4>
+												<ul>
+													<li>
+														<p>
+															Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<p>
+															<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+															<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+														</p>
+													</li>
+												</ul>
+											</div>
+											<!-- social -->
+											<ul class="social">
+												<li>
+													<a href="#">
+														<i class="icon icon-youtube"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-facebook"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-linkeding"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-instagram"></i>
+													</a>
+												</li>
+											</ul>
+											<!-- /social -->
+										</div>
+										<div class="right">
+											<!-- nav -->
+											<nav>
+												<div class="item">
+													<a class="link" href="#">
+														Nosotros
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Servicios
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Casos
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Noticias
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Colaboremos
+													</a>
+												</div>
+											</nav>
+											<!-- /nav -->
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const btn = document.querySelector('.btn-check input[type=checkbox]');
+			const body = document.querySelector('body');
+			btn.addEventListener('change', function(event) {
+				const _this = event.target;
+				if(body.classList.contains('overflow')) {
+					body.classList.remove('overflow');
+					body.style.overflowY = 'auto';
+				} else {
+					body.classList.add('overflow');
+					body.style.overflowY = 'hidden';
+				}
+			})
+		</script>
+	</header>
+	<main>
+		<!-- av_banner -->
+		<section class="av_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="title">
+							Agencia de publicidad digital
+						</h1>
+						<h2 class="subtitle">
+							Damos <span>vida</span> a<br> tu proyecto
+						</h2>
+						<h3>
+							Marketing orientado a resultados.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="block-btn">
+							<a href="#" class="btn-round">Casos de éxito <span class="icon round-arrow"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_banner -->
+		<!-- av_strategia -->
+		<section class="av_strategia">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<h3 class="title">
+							Una visión estratégica<br> y personalizada para<br> tu negocio.
+						</h3>
+						<article>
+							<div class="left">
+								<p>
+									En Avidalia nos gusta veros crecer, cumplir objetivos, posicionar vuestros emprendimientos y negocios.
+								</p>
+								<p>
+									Somos apasionados del Marketing Online y aplicamos toda nuestra experiencia para acrecentar vuestros beneﬁcios y revitalizar vuestros negocios.
+								</p>
+								<!-- block-btn -->
+								<div class="block-btn block-btn-text btn-white-line">
+									<a class="animated-arrow" href="#">
+										<span class="the-arrow -left">
+											<span class="shaft"></span>
+										</span>
+										<span class="main">
+											<span class="text btn-white-text">
+												Saber más
+											</span>
+											<span class="the-arrow -right">
+												<span class="shaft"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<!-- /block-btn -->
+							</div>
+							<div class="right table-visible">
+								<div class="block-image">
+									<picture>
+										<source srcset="img/home-page/strategia/mobile/group-8.png" media="(max-width: 767px)">
+										<source srcset="img/home-page/strategia/table/group-8.png" media="(max-width: 1030px)">
+										<img src="img/home-page/strategia/group-8.png" alt="">
+									</picture>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-lg-4 table-hide">
+						<div class="block-image">
+							<picture>
+								<source srcset="img/home-page/strategia/table/group-8.png" media="(max-width: 1030px)">
+								<img src="img/home-page/strategia/group-8.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_strategia -->
+		<!-- av_servicios -->
+		<section class="av_servicios">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<h3 class="title">
+							Nuestros<br> Servicios
+						</h3>
+						<p>
+							Siempre crecemos juntos.<br>
+							Si tu avanzas, nosotros avanzamos.
+						</p>
+					</div>
+					<div class="col-lg-8 col-md-6">
+						<div class="tab">
+							<details>
+								<summary>
+									<h3>
+										Analizamos
+										<span class="icon red-arrow"></span>
+									</h3>
+								</summary>
+								<article>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</article>
+							</details>
+							<details>
+								<summary>
+									<h3>
+										Diseñamos
+										<span class="icon red-arrow"></span>
+									</h3>
+								</summary>
+								<article>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</article>
+							</details>
+							<details>
+								<summary>
+									<h3>
+										Captamos
+										<span class="icon red-arrow"></span>
+									</h3>
+								</summary>
+								<article>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</article>
+							</details>
+							<details>
+								<summary>
+									<h3>
+										Posicionamos
+										<span class="icon red-arrow"></span>
+									</h3>
+								</summary>
+								<article>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+								</article>
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_servicios -->
+		<!-- av_blog -->
+		<section class="av_blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h3 class="title">
+							Casos <br>de éxito
+						</h3>
+						<p>
+							Tu éxito es nuestro éxito.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<!-- av_blog__item -->
+						<div class="av_blog__item">
+							<picture>
+								<source srcset="img/blog/nuestra/table/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" media="(max-width: 1030px)">
+								<img src="img/blog/nuestra/cloudworks-copy.png" alt="">
+							</picture>
+							<div class="content yellow">
+								<i class="icon icon-white-quote"></i>
+								<h4>
+									Nuestra propuesta llegó a nuestro público objetivo.
+								</h4>
+								<div class="name">
+									CloudWorks
+								</div>
+								<!-- block-btn -->
+								<div class="block-btn block-btn-text">
+									<a class="animated-arrow" href="#">
+										<span class="the-arrow -left">
+											<span class="shaft"></span>
+										</span>
+										<span class="main">
+											<span class="text">
+												Ver caso de éxito
+											</span>
+											<span class="the-arrow -right">
+												<span class="shaft"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<!-- /block-btn -->
+							</div>
+						</div>
+						<!-- /av_blog__item -->
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!-- av_blog__item -->
+						<div class="av_blog__item">
+							<picture>
+								<source srcset="img/blog/encontramos/table/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" media="(max-width: 1030px)">
+								<img src="img/blog/encontramos/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" alt="">
+							</picture>
+							<div class="content blue">
+								<i class="icon icon-white-quote"></i>
+								<h4>
+									Encontramos la forma de llevar nuestros locales a los locales.
+								</h4>
+								<div class="name">
+									Vidal Grup
+								</div>
+								<!-- block-btn -->
+								<div class="block-btn block-btn-text">
+									<a class="animated-arrow" href="#">
+										<span class="the-arrow -left">
+											<span class="shaft"></span>
+										</span>
+										<span class="main">
+											<span class="text">
+												Ver caso de éxito
+											</span>
+											<span class="the-arrow -right">
+												<span class="shaft"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<!-- /block-btn -->
+							</div>
+						</div>
+						<!-- /av_blog__item -->
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!-- av_blog__item -->
+						<div class="av_blog__item">
+							<picture>
+								<source srcset="img/blog/nosolos/table/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" media="(max-width: 1030px)">
+								<img src="img/blog/nosolos/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" alt="">
+							</picture>
+							<div class="content biriz">
+								<i class="icon icon-white-quote"></i>
+								<h4>
+									No solo mejoraron las ventas sino el reconocimiento.
+								</h4>
+								<div class="name">
+									Mobiprix
+								</div>
+								<!-- block-btn -->
+								<div class="block-btn block-btn-text">
+									<a class="animated-arrow" href="#">
+										<span class="the-arrow -left">
+											<span class="shaft"></span>
+										</span>
+										<span class="main">
+											<span class="text">
+												Ver caso de éxito
+											</span>
+											<span class="the-arrow -right">
+												<span class="shaft"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<!-- /block-btn -->
+							</div>
+						</div>
+						<!-- /av_blog__item -->
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!-- av_blog__item -->
+						<div class="av_blog__item">
+							<picture>
+								<source srcset="img/blog/descrubimos/table/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" media="(max-width: 1030px)">
+								<img src="img/blog/descrubimos/50391826-061-350-hb-b-2-c-sho-02-valid-until-20230707.png" alt="">
+							</picture>
+							<div class="content red">
+								<i class="icon icon-white-quote"></i>
+								<h4>
+									Descubrimos la manera de potenciar ventas.
+								</h4>
+								<div class="name">
+									Ibàñez Farmacia
+								</div>
+								<!-- block-btn -->
+								<div class="block-btn block-btn-text">
+									<a class="animated-arrow" href="#">
+										<span class="the-arrow -left">
+											<span class="shaft"></span>
+										</span>
+										<span class="main">
+											<span class="text">
+												Ver caso de éxito
+											</span>
+											<span class="the-arrow -right">
+												<span class="shaft"></span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<!-- /block-btn -->
+							</div>
+						</div>
+						<!-- /av_blog__item -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_blog -->
+		<!-- av_contact -->
+		<section class="av_contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="title">
+							¿Tienes un proyecto?<br> Colaboremos.
+						</h3>
+						<div class="block-btn">
+							<a class="animated-arrow" href="https://google.com">
+								<span class="the-arrow -left">
+									<span class="shaft"></span>
+								</span>
+								<span class="main">
+									<span class="text">
+										Contacta con nosotros
+									</span>
+									<span class="the-arrow -right">
+										<span class="shaft"></span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_contact -->
+		<!-- av_ -->
+		<section class="av_">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section>
+		<!-- /av_ -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="logotype">
+						<img src="img/logotype.png" alt="logotype">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in viverra justo. Pellentesque non eros pharetra risus imperdiet mollis sit amet vel nisl.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list location">
+						<h4>
+							BARCELONA 
+						</h4>
+						<ul>
+							<li>
+								<p>
+									Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li class="table-hide">
+								<p>
+									<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+									<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list table-mt">
+						<h4>
+							SERVICIOS 
+						</h4>
+						<ul>
+							<li><a href="#">Publicidad Online</a></li>
+							<li><a href="#">Posicionamiento Web: SEO</a></li>
+							<li><a href="#">Marketing de Contenidos</a></li>
+							<li><a href="#">Diseño y desarrollo Web</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-show">
+					<div class="list">
+						<p>
+							<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+							<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+						</p>
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-hide">
+					<div class="list">
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="top_footer">
+						<div class="company-l">
+							<span>
+								SOMOS
+							</span>
+							<img src="img/icons/google-partner.png" alt="google partner">
+						</div>
+					</div>
+					<div class="bottom_footer d-flex">
+						<div class="info">
+							Avidalia &copy; 2022 - Agencia de Marketing Online
+						</div>
+						<div class="ms-md-auto">
+							<ul class="list">
+								<li>
+									<a href="aviso-legal.html">Aviso Legal</a>
+								</li>
+								<li>
+									<a href="politica-de-cookie.html">Política de Cookies</a>
+								</li>
+								<li>
+									<a href="politica-prevasidad.html">Política de Privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- <div class="mobile fixed-button">
+		<div class="block-btn">
+			<a class="btn btn-red go-to" href="#form">
+				Te ayudamos
+			</a>
+		</div>
+	</div> -->
+	<!-- <script src="js/lazyload.js"></script> -->
+	<!-- <script src="js/hyphenopoly/Hyphenopoly_Loader.js"></script> -->
+	<!-- <script src="js/scripts.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script> -->
+	<!-- <script src="js/contactform.js"></script> -->
+	<!-- <script type="text/javascript" src="js/slick.js"></script> -->
+	
+</body>
+</html>

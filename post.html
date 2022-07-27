@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fb7a00">
+	<link rel="shortcut icon"  type="image/x-icon" href="favico.png">
+	<title>Post page</title>
+	<meta name="description" content="pluscolor">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<!-- <link rel="shortcut icon" href="img/qr_favicon.png" type="image/png"> -->
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/> -->
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/> -->
+</head>
+<body class="other post">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="head">
+						<div class="logotype">
+							<img src="img/logotype.png" alt="logotype">
+						</div>
+						<div class="menu">
+							<div class="block-btn">
+								<a href="#" class="btn-border-white">
+									colaboremos
+								</a>
+							</div>
+							<label class="btn-check">
+								<input type="checkbox">
+								<div class="btn-menu">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line short"></span>
+								</div>
+								<div class="block-menu">
+									<div class="max-width">
+										<div class="left">
+											<div class="list location">
+												<h4>
+													BARCELONA 
+												</h4>
+												<ul>
+													<li>
+														<p>
+															Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<p>
+															<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+															<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+														</p>
+													</li>
+												</ul>
+											</div>
+											<!-- social -->
+											<ul class="social">
+												<li>
+													<a href="#">
+														<i class="icon icon-youtube"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-facebook"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-linkeding"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-instagram"></i>
+													</a>
+												</li>
+											</ul>
+											<!-- /social -->
+										</div>
+										<div class="right">
+											<!-- nav -->
+											<nav>
+												<div class="item">
+													<a class="link" href="#">
+														Nosotros
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Servicios
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Casos
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Noticias
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Colaboremos
+													</a>
+												</div>
+											</nav>
+											<!-- /nav -->
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const btn = document.querySelector('.btn-check input[type=checkbox]');
+			const body = document.querySelector('body');
+			btn.addEventListener('change', function(event) {
+				const _this = event.target;
+				if(body.classList.contains('overflow')) {
+					body.classList.remove('overflow');
+					body.style.overflowY = 'auto';
+				} else {
+					body.classList.add('overflow');
+					body.style.overflowY = 'hidden';
+				}
+			})
+		</script>
+	</header>
+	<main>
+		<!-- av_banner -->
+		<section class="av_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="title">
+							Usabilidad Web
+						</h1>
+						<h2 class="subtitle">
+							¿Por qué hay que migrar de HTTP a HTTPS? Todas las claves del cambio de Google Chrome
+						</h2>
+						<h3>
+							<span class="post_author">Por Paula Borja</span>  |  <span class="post_date">22 de septiembre 2017</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_banner -->
+		<!-- av_post -->
+		<section class="av_post">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 block-content">
+						<article class="content">
+							<picture>
+								<img src="img/blog/post/imagen-selecta-copy-2.png" alt="">
+							</picture>
+							<p>
+								En unas semanas, cuando visites una página <a href="#">estilo link web y empieces a introducir</a> datos personales en algún campo, el navegador Google Chrome te alertará de que se trata de un sitio “No Seguro” (especialmente, si éste incluye formularios, contraseñas u otros datos de información confidencial y que, por tanto, requieran de la máxima seguridad). Y todo por una ‘s’, sí.
+							</p>
+							<p>
+								Desde octubre, el navegador mostrará este mensaje de advertencia en tres situaciones:
+							</p>
+							<ul>
+								<li>cada vez que un usuario entre en una página HTTP y no HTTPS.</li>
+								<li>cuando se introduzcan datos personales, ya sea para el envío de un formulario o para efectuar una compra a · través de un e-commerce.</li>
+								<li>cuando un usuario visite una página HTTP en modo incógnito.</li>
+							</ul>
+							<p>
+								Aquí tenemos la ‘s’ en cuestión. Con el protocolo de conexión HTTPS, Google introduce un factor de seguridad en el proceso. En la práctica, este elemento adicional de protección se traduce en: a) mayor encriptación del tráfico; b) mayor nivel de protección de todos los datos personales enviados durante la conexión; c) más control ante amenazas y ataques de phishing (la suplantación de servicios o sitios webs mediante un “anzuelo” reconocido por el usuario para acceder, por ejemplo, a su información financiera).
+							</p>
+							<p>
+								Para llegar a esta modificación en su versión 62, Chrome ya experimentó en su versión 56 (enero 2017) una disminución de hasta el 23% en la fracción de navegaciones a páginas HTTP. Este estudio se efectuó mediante la identificación de los sitios web HTTP con datos personales como “No Seguro” en la barra de navegación.
+							</p>
+							<h3>
+								<strong>Tipos de certificados SSL para la migración a HTTPS</strong>
+							</h3>
+							<p>
+								Según un reciente estudio de la cadena estadounidense CBS, en 2019 los costes mundiales por delitos cibernéticos podrían acercarse a los 2 billones de dólares. Ante este escenario, resulta lógico la puesta en práctica de mayor seguridad online por parte de Google (más aún si se calcula que el 70% de los usuarios de Chroma omite las advertencias de seguridad emitidas por el buscador).
+							</p>
+							<p>
+								Es en este contexto, donde los certificados SSL adquieren una relevancia absoluta. Con sus datos clave, pública para encriptar (o bloquear) y privada para descifrar (o desbloquear) son la herramienta imprescindible para mantener nuestra información segura. Empecemos.
+							</p>
+							<h3>
+								<strong>
+									Gratuito
+								</strong>
+							</h3>
+							<p>
+								El certificado SSL desarrollado por la plataforma Let’s Encrypt ofrece un tipo de cifrado básico, con la consiguiente inexistencia de las ventajas (y seguridades) ofrecidas por los servicios de cifrado pago. Permite introducir nuestro sitio web al protocolo de seguridad HTTPS con menor coste económico, cierto, pero también se ven deteriorados otros elementos fundamentales para la seguridad de nuestra página como la validez del certificado, la velocidad de emisión o la inexistencia de personal para facilitar asistencia técnica. ¿Los motivos? Muchos de los procesos son efectuados automáticamente y sin ningún tipo de verificación. A todo ello, hay que añadir problemas de compatibilidad en muchos de los navegadores móviles y de web.
+							</p>
+							<h3>
+								<strong>
+									Estándar o Dominio único
+								</strong>
+							</h3>
+							<p>
+								También conocidos como certificados SSL de nombre único protegen, como indica su nombre, un único dominio. Esto es, funcionan en un único proyecto web, pero no así para los subdominios. Por ejemplo: Sería correcto para www.avidalia.com, pero no si buscamos proteger también un blog bajo el dominio blog.avidalia.com.
+							</p>
+						</article>
+						<!-- table-visible -->
+						<!-- av_comments -->
+						<section class="av_comments table-visible">
+							<div class="col-12">
+								<!-- av_post__bottom -->
+								<div class="av_comments__bottom">
+									<!-- post_social -->
+									<div class="av_comments_social">
+										<p>
+											Compartir la noticia
+										</p>
+										<ul class="social">
+											<li>
+												<a href="#">
+													<i class="icon icon-linkeding"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="icon icon-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="icon icon-facebook"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- /post_social -->
+									<!-- av_post__comment -->
+									<div class="av_comments__comment">
+										<div class="comment-title">
+											2 comentarios
+										</div>	
+										<!-- comment-list -->
+										<ul class="comment-list">
+											<li>
+												<!-- comment-block -->
+												<div class="comment-block">
+													<div class="author-name">
+														Nombre Apellidos
+													</div>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fermentum blandit. Morbi at molestie lorem. Integer congue suscipit nibh, ac porttitor enim imperdiet nec. 
+													</p>
+													<!-- block-btn -->
+													<div class="block-btn block-btn-text">
+														<a class="animated-arrow" href="#">
+															<span class="the-arrow -left">
+																<span class="shaft"></span>
+															</span>
+															<span class="main">
+																<span class="text">
+																	RESPONDER
+																</span>
+																<span class="the-arrow -right">
+																	<span class="shaft"></span>
+																</span>
+															</span>
+														</a>
+													</div>
+													<!-- /block-btn -->
+												</div>
+												<!-- /comment-block -->
+												<!-- comment-reply -->
+												<ul class="comment-reply">
+													<li>
+														<!-- comment-block -->
+														<div class="comment-block">
+															<div class="author-name">
+																Nombre Apellidos
+															</div>
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fermentum blandit. Morbi at molestie lorem. Integer congue suscipit nibh, ac porttitor enim imperdiet nec. 
+															</p>
+															<!-- block-btn -->
+															<div class="block-btn block-btn-text">
+																<a class="animated-arrow" href="#">
+																	<span class="the-arrow -left">
+																		<span class="shaft"></span>
+																	</span>
+																	<span class="main">
+																		<span class="text">
+																			RESPONDER
+																		</span>
+																		<span class="the-arrow -right">
+																			<span class="shaft"></span>
+																		</span>
+																	</span>
+																</a>
+															</div>
+															<!-- /block-btn -->
+														</div>
+														<!-- /comment-block -->
+													</li>
+												</ul>
+												<!-- /comment-reply -->
+											</li>
+										</ul>	
+										<!-- /comment-list -->
+									</div>
+									<!-- /av_post__comment -->
+								</div>
+								<!-- /av_post__bottom -->
+								<div class="av_comments__send-comment">
+									<div class="form">
+										<div class="title">
+											Comentar
+										</div>
+										<form action="" method="POST">
+											<!-- group -->
+											<div class="group">
+												<!-- field -->
+												<div class="field reverse">
+													<label>
+														<input name="name" id="name" required="" type="text">
+														<div>
+															Nombre *
+														</div>
+													</label>
+												</div>
+												<!-- /field -->
+												<!-- field -->
+												<div class="field reverse">
+													<label>
+														<input name="email" id="email" required="" type="email">
+														<div>
+															Email *
+														</div>
+													</label>
+												</div>
+												<!-- /field -->
+											</div>
+											<div class="field reverse">
+												<label>
+													<textarea id="comments"></textarea>
+													<div>
+														Comentarios
+													</div>
+												</label>
+											</div>
+											<div class="field">
+												<label class="check">
+													<input type="checkbox" required name="check_form">
+													<span>
+														He leído y acepto las <a href="politica-prevasidad.html">condiciones de privacidad</a>
+													</span>
+												</label>
+											</div>
+											<div class="field">
+												<label class="check">
+													<input type="checkbox" name="newsletter">
+													<span>
+														Deseo suscribirme a la newsletter para recibir las últimas noticias y artículos.
+													</span>
+												</label>
+											</div>
+											<div class="block-btn">
+												<button type="submit" class="btn">PUBLICAR</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- /av_comments -->
+						<!-- /table-visible -->
+						<aside>
+							<div class="av_search__block">
+								<div class="block-search">
+									<form class="search-form" action="" method="get">
+										<input type="text" placeholder="Buscar">
+										<button type="submit" class="btn-search icon icon-lupa"></button>
+									</form>
+								</div>
+							</div>
+							<div class="widget_tag">
+								<h4 class="widget_title">
+									Categorías
+								</h4>
+								<ul class="tags">
+									<li>
+										<a href="#">
+											Google Ads
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Analítica web
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Diseño web
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Eventos
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Marketing Online
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Internet
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Redes Sociales
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											SEM
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											SEO
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="widget_news">
+								<h4 class="widget_title">
+									Noticias relacionadas
+								</h4>
+								<ul class="last-news">
+									<li>
+										<a href="#">
+											<h3>
+												Avidalia participa en el evento solidario para niños de Cars for Smiles
+											</h3>
+											<div class="info">
+												21 de julio, 2017  |  Google Ads
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>
+												Ya está disponible «La nueva experiencia» de Google Adwords
+											</h3>
+											<div class="info">
+												21 de julio, 2017  |  Google Ads
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>
+												Nuevas funciones de Lighthouse
+											</h3>
+											<div class="info">
+												21 de julio, 2017  |  Google Ads
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_post -->
+		<!-- av_comments -->
+		<section class="av_comments table-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- av_post__bottom -->
+						<div class="av_comments__bottom">
+							<!-- post_social -->
+							<div class="av_comments_social">
+								<p>
+									Compartir la noticia
+								</p>
+								<ul class="social">
+									<li>
+										<a href="#">
+											<i class="icon icon-linkeding"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon icon-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon icon-facebook"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /post_social -->
+							<!-- av_post__comment -->
+							<div class="av_comments__comment">
+								<div class="comment-title">
+									2 comentarios
+								</div>	
+								<!-- comment-list -->
+								<ul class="comment-list">
+									<li>
+										<!-- comment-block -->
+										<div class="comment-block">
+											<div class="author-name">
+												Nombre Apellidos
+											</div>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fermentum blandit. Morbi at molestie lorem. Integer congue suscipit nibh, ac porttitor enim imperdiet nec. 
+											</p>
+											<!-- block-btn -->
+											<div class="block-btn block-btn-text">
+												<a class="animated-arrow" href="#">
+													<span class="the-arrow -left">
+														<span class="shaft"></span>
+													</span>
+													<span class="main">
+														<span class="text">
+															RESPONDER
+														</span>
+														<span class="the-arrow -right">
+															<span class="shaft"></span>
+														</span>
+													</span>
+												</a>
+											</div>
+											<!-- /block-btn -->
+										</div>
+										<!-- /comment-block -->
+										<!-- comment-reply -->
+										<ul class="comment-reply">
+											<li>
+												<!-- comment-block -->
+												<div class="comment-block">
+													<div class="author-name">
+														Nombre Apellidos
+													</div>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fermentum blandit. Morbi at molestie lorem. Integer congue suscipit nibh, ac porttitor enim imperdiet nec. 
+													</p>
+													<!-- block-btn -->
+													<div class="block-btn block-btn-text">
+														<a class="animated-arrow" href="#">
+															<span class="the-arrow -left">
+																<span class="shaft"></span>
+															</span>
+															<span class="main">
+																<span class="text">
+																	RESPONDER
+																</span>
+																<span class="the-arrow -right">
+																	<span class="shaft"></span>
+																</span>
+															</span>
+														</a>
+													</div>
+													<!-- /block-btn -->
+												</div>
+												<!-- /comment-block -->
+											</li>
+										</ul>
+										<!-- /comment-reply -->
+									</li>
+								</ul>	
+								<!-- /comment-list -->
+							</div>
+							<!-- /av_post__comment -->
+						</div>
+						<!-- /av_post__bottom -->
+						<div class="av_comments__send-comment">
+							<div class="form">
+								<div class="title">
+									Comentar
+								</div>
+								<form action="" method="POST">
+									<!-- group -->
+									<div class="group">
+										<!-- field -->
+										<div class="field reverse">
+											<label>
+												<input name="name" id="name" required="" type="text">
+												<div>
+													Nombre *
+												</div>
+											</label>
+										</div>
+										<!-- /field -->
+										<!-- field -->
+										<div class="field reverse">
+											<label>
+												<input name="email" id="email" required="" type="email">
+												<div>
+													Email *
+												</div>
+											</label>
+										</div>
+										<!-- /field -->
+									</div>
+									<div class="field reverse">
+										<label>
+											<textarea id="comments"></textarea>
+											<div>
+												Comentarios
+											</div>
+										</label>
+									</div>
+									<div class="field">
+										<label class="check">
+											<input type="checkbox" required name="check_form">
+											<span>
+												He leído y acepto las <a href="politica-prevasidad.html">condiciones de privacidad</a>
+											</span>
+										</label>
+									</div>
+									<div class="field">
+										<label class="check">
+											<input type="checkbox" name="newsletter">
+											<span>
+												Deseo suscribirme a la newsletter para recibir las últimas noticias y artículos.
+											</span>
+										</label>
+									</div>
+									<div class="block-btn">
+										<button type="submit" class="btn">PUBLICAR</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_comments -->
+		<!-- av_contact -->
+		<section class="av_contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="title">
+							¿Quieres estar informado?
+						</h3>
+						<p>
+							Apúntate a nuestro boletín mensual para recibir las últimas noticias y artículos en tu bandeja de entrada.
+						</p>
+						<div class="form">
+							<form class="subscribe" action="" method="POST">
+								<div class="field">
+									<label>
+										<input type="mail" name="email">
+										<div>
+											E - mail
+										</div>
+									</label>
+								</div>
+								<div class="block-btn">
+									<button class="btn">Suscribírme</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_contact -->
+		<!-- av_ -->
+		<section class="av_">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section>
+		<!-- /av_ -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="logotype">
+						<img src="img/logotype.png" alt="logotype">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in viverra justo. Pellentesque non eros pharetra risus imperdiet mollis sit amet vel nisl.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list location">
+						<h4>
+							BARCELONA 
+						</h4>
+						<ul>
+							<li>
+								<p>
+									Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li class="table-hide">
+								<p>
+									<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+									<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list table-mt">
+						<h4>
+							SERVICIOS 
+						</h4>
+						<ul>
+							<li><a href="#">Publicidad Online</a></li>
+							<li><a href="#">Posicionamiento Web: SEO</a></li>
+							<li><a href="#">Marketing de Contenidos</a></li>
+							<li><a href="#">Diseño y desarrollo Web</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-show">
+					<div class="list">
+						<p>
+							<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+							<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+						</p>
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-hide">
+					<div class="list">
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="top_footer">
+						<div class="company-l">
+							<span>
+								SOMOS
+							</span>
+							<img src="img/icons/google-partner.png" alt="google partner">
+						</div>
+					</div>
+					<div class="bottom_footer d-flex">
+						<div class="info">
+							Avidalia &copy; 2022 - Agencia de Marketing Online
+						</div>
+						<div class="ms-md-auto">
+							<ul class="list">
+								<li>
+									<a href="aviso-legal.html">Aviso Legal</a>
+								</li>
+								<li>
+									<a href="politica-de-cookie.html">Política de Cookies</a>
+								</li>
+								<li>
+									<a href="politica-prevasidad.html">Política de Privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- <div class="mobile fixed-button">
+		<div class="block-btn">
+			<a class="btn btn-red go-to" href="#form">
+				Te ayudamos
+			</a>
+		</div>
+	</div> -->
+	<!-- <script src="js/lazyload.js"></script> -->
+	<!-- <script src="js/hyphenopoly/Hyphenopoly_Loader.js"></script> -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<!-- <script src="js/contactform.js"></script> -->
+	<!-- <script type="text/javascript" src="js/slick.js"></script> -->
+	
+</body>
+</html>

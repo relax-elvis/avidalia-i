@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fb7a00">
+	<link rel="shortcut icon"  type="image/x-icon" href="favico.png">
+	<title>Blog page</title>
+	<meta name="description" content="pluscolor">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<!-- <link rel="shortcut icon" href="img/qr_favicon.png" type="image/png"> -->
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/> -->
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/> -->
+</head>
+<body class="other blog-list">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="head">
+						<div class="logotype">
+							<img src="img/logotype.png" alt="logotype">
+						</div>
+						<div class="menu">
+							<div class="block-btn">
+								<a href="#" class="btn-border-white">
+									colaboremos
+								</a>
+							</div>
+							<label class="btn-check">
+								<input type="checkbox">
+								<div class="btn-menu">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line short"></span>
+								</div>
+								<div class="block-menu">
+									<div class="max-width">
+										<div class="left">
+											<div class="list location">
+												<h4>
+													BARCELONA 
+												</h4>
+												<ul>
+													<li>
+														<p>
+															Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<p>
+															<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+															<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+														</p>
+													</li>
+												</ul>
+											</div>
+											<!-- social -->
+											<ul class="social">
+												<li>
+													<a href="#">
+														<i class="icon icon-youtube"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-facebook"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-linkeding"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-instagram"></i>
+													</a>
+												</li>
+											</ul>
+											<!-- /social -->
+										</div>
+										<div class="right">
+											<!-- nav -->
+											<nav>
+												<div class="item">
+													<a class="link" href="#">
+														Nosotros
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Servicios
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Casos
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Noticias
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Colaboremos
+													</a>
+												</div>
+											</nav>
+											<!-- /nav -->
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const btn = document.querySelector('.btn-check input[type=checkbox]');
+			const body = document.querySelector('body');
+			btn.addEventListener('change', function(event) {
+				const _this = event.target;
+				if(body.classList.contains('overflow')) {
+					body.classList.remove('overflow');
+					body.style.overflowY = 'auto';
+				} else {
+					body.classList.add('overflow');
+					body.style.overflowY = 'hidden';
+				}
+			})
+		</script>
+	</header>
+	<main>
+		<!-- av_banner -->
+		<section class="av_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="title">
+							Blog
+						</h1>
+						<h2 class="subtitle">
+							<span class="yellow">Notícias</span> para estar a la<br> última 
+						</h2>
+						<h3>
+							En este blog encontraras las novedades del marketing online
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_banner -->
+		<!-- av_search-panel -->
+		<section class="av_search">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="av_search__block">
+							<div class="block-search">
+								<form class="search-form" action="" method="get">
+									<input type="text" placeholder="Buscar">
+									<button type="submit" class="btn-search icon icon-lupa"></button>
+								</form>
+							</div>
+							<div class="block-filter">
+								<div class="item">
+									<label for="category">Categorías</label>
+									<select name="category" id="category">
+										<option>Todas las categorías</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="item">
+									<label for="ordenar-por">Ordenar por</label>
+									<select name="ordenar-por" id="ordenar-por">
+										<option>Más recientes</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_search-panel -->
+		<!-- av_blog-list -->
+		<section class="av_blog-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="av_blog-list_block">
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Gerardo Collazo
+									</li>
+									<li>
+										9 de febrero 2018
+									</li>
+									<li>
+										Desarrollo Web
+									</li>
+								</ul>
+								<div class="title">
+									Nuevas funciones de Lighthouse
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Paula Borja
+									</li>
+									<li>
+										22 de septiembre 2017
+									</li>
+									<li>
+										Usabilidad Web
+									</li>
+								</ul>
+								<div class="title">
+									¿Por qué hay que migrar de HTTP a HTTPS? Todas las claves del cambio de Google Chrome
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Eduardo
+									</li>
+									<li>
+										21 de julio, 2017
+									</li>
+									<li>
+										Google Ads
+									</li>
+								</ul>
+								<div class="title">
+									Ya está disponible «La nueva experiencia» de Google Adwords
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Gerardo Collazo
+									</li>
+									<li>
+										9 de febrero 2018
+									</li>
+									<li>
+										Desarrollo Web
+									</li>
+								</ul>
+								<div class="title">
+									Nuevas funciones de Lighthouse
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Paula Borja
+									</li>
+									<li>
+										22 de septiembre 2017
+									</li>
+									<li>
+										Usabilidad Web
+									</li>
+								</ul>
+								<div class="title">
+									¿Por qué hay que migrar de HTTP a HTTPS? Todas las claves del cambio de Google Chrome
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Eduardo
+									</li>
+									<li>
+										21 de julio, 2017
+									</li>
+									<li>
+										Google Ads
+									</li>
+								</ul>
+								<div class="title">
+									Ya está disponible «La nueva experiencia» de Google Adwords
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Gerardo Collazo
+									</li>
+									<li>
+										9 de febrero 2018
+									</li>
+									<li>
+										Desarrollo Web
+									</li>
+								</ul>
+								<div class="title">
+									Nuevas funciones de Lighthouse
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Paula Borja
+									</li>
+									<li>
+										22 de septiembre 2017
+									</li>
+									<li>
+										Usabilidad Web
+									</li>
+								</ul>
+								<div class="title">
+									¿Por qué hay que migrar de HTTP a HTTPS? Todas las claves del cambio de Google Chrome
+								</div>
+							</div>
+							<!-- /item -->
+							<!-- item -->
+							<div class="av_blog-list__item">
+								<img src="img/blog/post-list/imagen-selecta.png" alt="">
+								<ul class="list">
+									<li>
+										Por Eduardo
+									</li>
+									<li>
+										21 de julio, 2017
+									</li>
+									<li>
+										Google Ads
+									</li>
+								</ul>
+								<div class="title">
+									Ya está disponible «La nueva experiencia» de Google Adwords
+								</div>
+							</div>
+							<!-- /item -->
+						</div>
+						<div class="av_pagination">
+							<a class="prev-page" href="#"><svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="m14.546 7.092-12.134.02 3.365 5.204-1.173.033L.912 6.638 3.848.75 5.022.719 2.345 6.087l12.201-.02z" fill="#000" fill-rule="evenodd"/></svg></a>
+							<ul class="list-page">
+								<li>
+									<a href="#">
+										1
+									</a>
+								</li>
+								<li>
+									<a href="#" class="active">
+										2
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										3
+									</a>
+								</li>
+							</ul>
+							<a class="next-page" href="#"><svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg"><path d="m.134 7.092 12.134.02-3.365 5.204 1.173.033 3.692-5.711L10.832.75 9.658.719l2.677 5.368-12.201-.02z" fill="#000" fill-rule="evenodd"/></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_blog-list -->
+		<!-- av_contact -->
+		<section class="av_contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="title">
+							¿Quieres estar informado?
+						</h3>
+						<p>
+							Apúntate a nuestro boletín mensual para recibir las últimas noticias y artículos en tu bandeja de entrada.
+						</p>
+						<div class="form">
+							<form class="subscribe" action="" method="POST">
+								<div class="field">
+									<label>
+										<input type="mail" name="email">
+										<div>
+											E - mail
+										</div>
+									</label>
+								</div>
+								<div class="block-btn">
+									<button class="btn">Suscribírme</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_contact -->
+		<!-- av_ -->
+		<section class="av_">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section>
+		<!-- /av_ -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="logotype">
+						<img src="img/logotype.png" alt="logotype">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in viverra justo. Pellentesque non eros pharetra risus imperdiet mollis sit amet vel nisl.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list location">
+						<h4>
+							BARCELONA 
+						</h4>
+						<ul>
+							<li>
+								<p>
+									Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li class="table-hide">
+								<p>
+									<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+									<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list table-mt">
+						<h4>
+							SERVICIOS 
+						</h4>
+						<ul>
+							<li><a href="#">Publicidad Online</a></li>
+							<li><a href="#">Posicionamiento Web: SEO</a></li>
+							<li><a href="#">Marketing de Contenidos</a></li>
+							<li><a href="#">Diseño y desarrollo Web</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-show">
+					<div class="list">
+						<p>
+							<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+							<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+						</p>
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-hide">
+					<div class="list">
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="top_footer">
+						<div class="company-l">
+							<span>
+								SOMOS
+							</span>
+							<img src="img/icons/google-partner.png" alt="google partner">
+						</div>
+					</div>
+					<div class="bottom_footer d-flex">
+						<div class="info">
+							Avidalia &copy; 2022 - Agencia de Marketing Online
+						</div>
+						<div class="ms-md-auto">
+							<ul class="list">
+								<li>
+									<a href="aviso-legal.html">Aviso Legal</a>
+								</li>
+								<li>
+									<a href="politica-de-cookie.html">Política de Cookies</a>
+								</li>
+								<li>
+									<a href="politica-prevasidad.html">Política de Privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- <div class="mobile fixed-button">
+		<div class="block-btn">
+			<a class="btn btn-red go-to" href="#form">
+				Te ayudamos
+			</a>
+		</div>
+	</div> -->
+	<!-- <script src="js/lazyload.js"></script> -->
+	<!-- <script src="js/hyphenopoly/Hyphenopoly_Loader.js"></script> -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<!-- <script src="js/contactform.js"></script> -->
+	<!-- <script type="text/javascript" src="js/slick.js"></script> -->
+	
+</body>
+</html>

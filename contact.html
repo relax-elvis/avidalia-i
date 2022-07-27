@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fb7a00">
+	<link rel="shortcut icon"  type="image/x-icon" href="favico.png">
+	<title>Contact page</title>
+	<meta name="description" content="pluscolor">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<!-- <link rel="shortcut icon" href="img/qr_favicon.png" type="image/png"> -->
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/> -->
+	<!-- Add the slick-theme.css if you want default styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/> -->
+</head>
+<body class="other contact-page">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="head">
+						<div class="logotype">
+							<img src="img/logotype.png" alt="logotype">
+						</div>
+						<div class="menu">
+							<label class="btn-check">
+								<input type="checkbox">
+								<div class="btn-menu">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line short"></span>
+								</div>
+								<div class="block-menu">
+									<div class="max-width">
+										<div class="left">
+											<div class="list location">
+												<h4>
+													BARCELONA 
+												</h4>
+												<ul>
+													<li>
+														<p>
+															Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+														</p>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<p>
+															<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+															<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+														</p>
+													</li>
+												</ul>
+											</div>
+											<!-- social -->
+											<ul class="social">
+												<li>
+													<a href="#">
+														<i class="icon icon-youtube"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-facebook"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-linkeding"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="icon icon-instagram"></i>
+													</a>
+												</li>
+											</ul>
+											<!-- /social -->
+										</div>
+										<div class="right">
+											<!-- nav -->
+											<nav>
+												<div class="item">
+													<a class="link" href="#">
+														Nosotros
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Servicios
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Casos
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Noticias
+													</a>
+												</div>
+												<div class="item">
+													<a class="link" href="#">
+														Colaboremos
+													</a>
+												</div>
+											</nav>
+											<!-- /nav -->
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const btn = document.querySelector('.btn-check input[type=checkbox]');
+			const body = document.querySelector('body');
+			btn.addEventListener('change', function(event) {
+				const _this = event.target;
+				if(body.classList.contains('overflow')) {
+					body.classList.remove('overflow');
+					body.style.overflowY = 'auto';
+				} else {
+					body.classList.add('overflow');
+					body.style.overflowY = 'hidden';
+				}
+			})
+		</script>
+	</header>
+	<main>
+		<!-- av_banner -->
+		<section class="av_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="title">
+							COLABOREMOS
+						</h1>
+						<h2 class="subtitle">
+							Queremos conocer<br> <span class="red">tu historia</span>
+						</h2>
+						<h3>
+							¿Quieres hablar sobre un proyecto con nosotros?
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_banner -->
+		<!-- av_ -->
+		<section class="av_contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="form">
+							<h3>
+								Rellena el formulario y cuéntanos tu historia.
+							</h3>
+							<form action="" method="POST">
+								<!-- group -->
+								<div class="group">
+									<!-- field -->
+									<div class="field reverse">
+										<label>
+											<input name="name" id="name" required="" type="text">
+											<div>
+												Nombre *
+											</div>
+										</label>
+									</div>
+									<!-- /field -->
+									<!-- field -->
+									<div class="field reverse">
+										<label>
+											<input name="email" id="email" required="" type="email">
+											<div>
+												Email *
+											</div>
+										</label>
+									</div>
+									<!-- /field -->
+								</div>
+								<!-- /group -->
+								<!-- group -->
+								<div class="group">
+									<!-- field -->
+									<div class="field reverse">
+										<label>
+											<input name="phone" id="pohone" required="" type="tel">
+											<div>
+												Teléfono *
+											</div>
+										</label>
+									</div>
+									<!-- /field -->
+									<!-- field -->
+									<div class="field reverse">
+										<label>
+											<input name="empresa" required="" type="text">
+											<div>
+												Empresa
+											</div>
+										</label>
+									</div>
+									<!-- /field -->
+								</div>
+								<!-- /group -->
+								<!-- group -->
+								<div class="group checkbox">
+									<div class="title">
+										Servicios de interés
+									</div>
+									<ul>
+										<li>
+											<label>
+												<input type="checkbox" name="consultoria">
+												<span>
+													Consultoría
+												</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="publicidad_online">
+												<span>
+													Publicidad online
+												</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="diseno_web">
+												<span>
+													Diseño Web
+												</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="seo">
+												<span>
+													SEO
+												</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<!-- /group -->
+								<div class="field reverse">
+									<label>
+										<textarea id="comments"></textarea>
+										<div>
+											Cuéntanos sobre ti y tus objetivos
+										</div>
+									</label>
+								</div>
+								<div class="field">
+									<label class="check">
+										<input type="checkbox" required name="check_form">
+										<span>
+											He leído y acepto las <a href="politica-prevasidad.html">condiciones de privacidad</a>
+										</span>
+									</label>
+								</div>
+								<div class="field">
+									<label class="check">
+										<input type="checkbox" name="newsletter">
+										<span>
+											Deseo suscribirme a la newsletter para recibir las últimas noticias y artículos.
+										</span>
+									</label>
+								</div>
+								<div class="block-btn">
+									<button type="submit" class="btn">ENVIAR</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="av_contact__info">
+							<div class="title">
+								Si lo prefieres llámanos
+							</div>
+							<div class="phone">
+								<a href="tel:934644488">
+									<svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
+									    <path d="M16.118 11.555c0-.184-.028-.369-.083-.55a29.981 29.981 0 0 1-1.12-5.41A1.807 1.807 0 0 0 13.107 4H5.82c-.517 0-.992.21-1.34.592-.352.385-.519.885-.471 1.408 1.807 19.628 17.364 35.185 36.991 36.992a1.818 1.818 0 0 0 1.41-.47c.38-.35.591-.824.591-1.342v-7.289c0-.926-.686-1.702-1.596-1.805a30.191 30.191 0 0 1-5.41-1.12 1.82 1.82 0 0 0-1.826.44l-4.809 4.81-1.162-.58a37.648 37.648 0 0 1-16.833-16.834l-.578-1.162 4.808-4.81c.341-.34.524-.8.524-1.275M0 5.536A5.528 5.528 0 0 1 5.52 0h7.413a5.506 5.506 0 0 1 5.485 4.883A26.877 26.877 0 0 0 19.42 9.72a5.52 5.52 0 0 1-1.363 5.528l-3.005 3.003a34.64 34.64 0 0 0 13.695 13.695l3.004-3.004a5.518 5.518 0 0 1 5.528-1.362c1.572.48 3.198.818 4.837 1.003A5.505 5.505 0 0 1 47 34.066v7.412a5.528 5.528 0 0 1-1.799 4.077 5.551 5.551 0 0 1-4.243 1.422 44.962 44.962 0 0 1-15.264-4.19 45.312 45.312 0 0 1-12.586-8.896 45.326 45.326 0 0 1-8.895-12.585A45 45 0 0 1 .023 6.042 5.411 5.411 0 0 1 0 5.536" fill="#000" fill-rule="evenodd"/>
+									</svg> +34  93 464 44 88</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_ -->
+		<!-- av_location -->
+		<section class="av_location">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="title">
+							Visítanos en Barcelona
+						</h3>
+					</div>
+					<div class="col-sm-6">
+						<div class="left">
+							<div class="block">
+								<i class="icon icon-location-marker"></i>
+								<h3>
+									Consell de cent, 295, 3º 1ª, 08007 Barcelona
+								</h3>
+								<div class="block-btn">
+									<a class="btn-black-text" href="#">VER MAPA <span class="icon arrow-black-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="right">
+							<div class="block">
+								<i class="icon icon-location-marker"></i>
+								<h3>
+									Passeig de Gràcia, 12, 1º, 08007 Barcelona
+								</h3>
+								<div class="block-btn">
+									<a class="btn-black-text" href="#">VER MAPA <span class="icon arrow-black-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /av_location -->
+		<!-- av_ -->
+		<section class="av_">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section>
+		<!-- /av_ -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="logotype">
+						<img src="img/logotype.png" alt="logotype">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in viverra justo. Pellentesque non eros pharetra risus imperdiet mollis sit amet vel nisl.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list location">
+						<h4>
+							BARCELONA 
+						</h4>
+						<ul>
+							<li>
+								<p>
+									Consell de cent, 295, 3º 1ª, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									Passeig de Gràcia, 12, 1º, 08007 Barcelona <a href="#">Mapa</a>
+								</p>
+							</li>
+							<li class="table-hide">
+								<p>
+									<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+									<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="list table-mt">
+						<h4>
+							SERVICIOS 
+						</h4>
+						<ul>
+							<li><a href="#">Publicidad Online</a></li>
+							<li><a href="#">Posicionamiento Web: SEO</a></li>
+							<li><a href="#">Marketing de Contenidos</a></li>
+							<li><a href="#">Diseño y desarrollo Web</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-show">
+					<div class="list">
+						<p>
+							<a class="phone" href="tel:+34934644488">+34  93 464 44 88</a>
+							<a class="email" href="mailto:proyectos@avidalia.com">proyectos@avidalia.com</a>
+						</p>
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 table-hide">
+					<div class="list">
+						<h4>
+							SÍGUENOS
+						</h4>
+						<ul class="social">
+							<li>
+								<a href="#">
+									<i class="icon icon-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-linkeding"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="top_footer">
+						<div class="company-l">
+							<span>
+								SOMOS
+							</span>
+							<img src="img/icons/google-partner.png" alt="google partner">
+						</div>
+					</div>
+					<div class="bottom_footer d-flex">
+						<div class="info">
+							Avidalia &copy; 2022 - Agencia de Marketing Online
+						</div>
+						<div class="ms-md-auto">
+							<ul class="list">
+								<li>
+									<a href="aviso-legal.html">Aviso Legal</a>
+								</li>
+								<li>
+									<a href="politica-de-cookie.html">Política de Cookies</a>
+								</li>
+								<li>
+									<a href="politica-prevasidad.html">Política de Privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- <div class="mobile fixed-button">
+		<div class="block-btn">
+			<a class="btn btn-red go-to" href="#form">
+				Te ayudamos
+			</a>
+		</div>
+	</div> -->
+	<!-- <script src="js/lazyload.js"></script> -->
+	<!-- <script src="js/hyphenopoly/Hyphenopoly_Loader.js"></script> -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<!-- <script src="js/contactform.js"></script> -->
+	<!-- <script type="text/javascript" src="js/slick.js"></script> -->
+	
+</body>
+</html>
