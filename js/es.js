@@ -1,12 +1,17 @@
 function f_scroll() {
 	const header = document.querySelector('header');
+	const logo = document.querySelector('header .logotype img');
+	const logoSrc = document.querySelector('header .logotype img').getAttribute("src");
+	const logoDataSrc = document.querySelector('header .logotype img').getAttribute('data-fixed-src');
 	window.addEventListener('scroll', function(e) {
 		var scroll_top = this.scrollY;
 
 		if(scroll_top < 200) {
 			header.classList.remove('fixed');
+			logo.setAttribute('src', logoSrc);
 		} else {
 			header.classList.add('fixed');
+			logo.setAttribute('src', logoDataSrc);
 		}
 	});
 		
