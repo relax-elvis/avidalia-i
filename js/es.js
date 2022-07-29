@@ -25,4 +25,20 @@ btn.addEventListener('change', function(event) {
 		body.classList.add('overflow');
 		body.style.overflowY = 'hidden';
 	}
+});
+
+const tab = document.querySelectorAll('.tab details summary');
+const detail = document.querySelectorAll('.tab details');
+
+tab.forEach(function(item) {
+	item.addEventListener('click', function(e) {
+		const _this = e.target.parentNode.parentNode;
+		if(_this.getAttribute('open') == null) {
+			for(let i = 0; i < detail.length; i++) {
+				detail[i].removeAttribute('open');
+			}
+			_this.removeAttribute('open');
+		}
+	})
 })
+
