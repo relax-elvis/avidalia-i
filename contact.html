@@ -216,10 +216,10 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-12">
 						<div class="form">
-							<h3>
-								Rellena el formulario y cuéntanos tu historia.
-							</h3>
-							<form action="" method="POST">
+							<form style="display:none;" action="" method="POST">
+								<h3>
+									Rellena el formulario y cuéntanos tu historia.
+								</h3>
 								<!-- group -->
 								<div class="group">
 									<!-- field -->
@@ -337,6 +337,21 @@
 									<button type="submit" class="btn">ENVIAR</button>
 								</div>
 							</form>
+							<div style="display:none;" class="av_contact__success text-center">
+								<div class="ok"><img src="img/check-black-icon.png" alt=""></div>
+								<p>
+									<b>Su mensaje se ha enviado con éxito.</b><br>
+									En breve nos pordemos en contacto contigo.
+								</p>
+							</div>
+							<div class="av_contact__error text-center">
+								<div class="error"><img src="img/error-alert.png" alt=""></div>
+								<p>
+									<b>Ups algo salió mal.</b><br>
+									Intentalo de nuevo más tarde.
+								</p>
+								<button class="btn btn-white">Volver a intentar</button>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12">
