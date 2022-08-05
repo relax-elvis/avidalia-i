@@ -19,6 +19,8 @@ function f_scroll() {
 }
 f_scroll();
 
+
+
 const btn = document.querySelector('.btn-check input[type=checkbox]');
 const body = document.querySelector('body');
 btn.addEventListener('change', function(event) {
@@ -47,3 +49,36 @@ tab.forEach(function(item) {
 	})
 })
 
+if(window.outerWidth < 767) {
+	const heightMenu = document.querySelector('.btn-check .block-menu .max-width').offsetHeight;
+	document.querySelector('.btn-check .block-menu .max-width').scrollTo(0, -heightMenu);
+
+	if(document.querySelector('body.other .av_banner nav.banner-menu') !== null) {
+		const text = document.querySelector('body.other .av_banner nav.banner-menu .link.active').innerText;
+		document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
+		
+		const mobileBmenu = document.querySelector('body.other .av_banner nav.banner-menu .mobile-bmenu');
+		mobileBmenu.addEventListener('click', function(event) {
+			const _this = event.currentTarget;
+			if(_this.classList.contains('active')) {
+				_this.classList.remove('active');
+			} else {
+				_this.classList.add('active');
+			}
+		});
+
+		const mLink = document.querySelectorAll('nav.banner-menu .link');
+		mLink.forEach(function(item) {
+			item.addEventListener('click', function(event) {
+				const _this = event.currentTarget;
+				document.querySelector('body.other .av_banner nav.banner-menu .link.active').classList.remove('active');
+				_this.classList.add('active');
+
+				let text = _this.innerText;
+				
+				document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
+				mobileBmenu.classList.remove('active');
+			})
+		})
+	}
+}
