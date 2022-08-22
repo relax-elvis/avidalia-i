@@ -375,6 +375,18 @@
 								<span>
 									Historía
 								</span>
+								<div class="lines">
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+								</div>
 							</div>
 							<div class="cliente">
 								<span>
@@ -930,7 +942,102 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
 
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script> -->
+
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
+
+	<script>
+		// gsap.to(".av_clienth .left .historia", {duration: 1, x:-250, stagger: 0.5});
+		// gsap.to(".av_clienth .left .cliente", {duration: 1, x:250, stagger: 0.5});
+
+		// const d = new ScrollMagic.Controller({
+	 //        globalSceneOptions: {
+	 //            triggerHook: "onEnter",
+	 //            duration: "100%"
+	 //        }
+	 //    })
+		// const timeLine = new TimelineMax;
+  //       timeLine.to(".av_clienth .left .historia", .25, {
+  //           x: 0
+  //       }).to(".av_clienth .left .cliente", .25, {
+  //           x: 0
+  //       }, "-=0.25").to(".venn-line", .25, {
+  //           drawSVG: "100%"
+  //       });
+  //       new ScrollMagic.Scene({
+  //           triggerElement: "#approach-infographic",
+  //           offset: 0
+  //       }).setTween(timeLine).addTo(d);
+
+        // const historia = document.querySelector('body.other .av_clienth .left .historia');
+        // const cliente = document.querySelector('body.other .av_clienth .left .cliente');
+
+        // document.addEventListener('scroll', function(event) {
+        // 	const topElement = document.querySelector('.av_clienth').offsetTop;
+        // 	const topElementHeight = document.querySelector('.av_clienth').offsetHeight;
+        // 	const topElementEnd = topElement + topElementHeight;
+        // 	const scrollT = window.scrollY;
+
+        // 	if(topElementEnd <= scrollT) {
+        // 		console.log('end');
+        // 		return false;
+        // 	}
+        // 	if((topElement - topElementHeight) <= scrollT) {
+        // 		console.log(scrollT)
+        // 		cliente.style.transform = translate()
+        // 	}
+        // 	// const mainHeight = document.querySelector('body main').offsetHeight;
+        	
+        // 	// const clientHeight = document.body.clientHeight;
+        // 	// const result = Math.floor((0, mainHeight - (0, scrollT - (0, clientHeight))));
+
+        // 	// console.log(result);
+        // })
+
+   //      gsap.registerPlugin(ScrollTrigger);
+   //      gsap.to("body.other .av_clienth", {
+		 //    scrollTrigger: {
+		 //      scroller: "body.other .av_clienth",
+		 //      trigger: "body.other .av_clienth",
+		 //      start: "20px 80%",
+		 //      pin: true,
+		 //      scrub: 05,
+		 //      toggleActions: "restart pause reverse pause",
+		 //    },
+		 //    x: 0,
+			// duration: 3,
+			// stagger: 0.5
+		 //  });
+   //      gsap.to("body.other .av_clienth", {
+		 //    scrollTrigger: {
+		 //      scroller: "body.other .av_clienth",
+		 //      trigger: "body.other .av_clienth",
+		 //      start: "20px 80%",
+		 //      pin: true,
+		 //      scrub: 05,
+		 //      toggleActions: "restart pause reverse pause",
+		 //    },
+		 //    x: 0,
+			// duration: 3,
+			// stagger: 0.5
+		 //  });
+
+		// add animations and labels to the timeline
+		// tl.addLabel("start")
+		//   .from("body.other .av_clienth .left .historia", {scale: 0.3, rotation:45, autoAlpha: 0})
+		//   .addLabel("color")
+		//   .from("body.other .av_clienth .left", {backgroundColor: "#28a92b"})
+		//   .addLabel("spin")
+		//   .to("body.other .av_clienth .left", {rotation: 360})
+		//   .addLabel("end");
+
+	</script>
 	<script src="js/es.js"></script>
 	<!-- <div class="mobile fixed-button">
 		<div class="block-btn">
