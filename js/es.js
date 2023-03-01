@@ -25,6 +25,7 @@ const btn = document.querySelector('.btn-check input[type=checkbox]');
 const body = document.querySelector('body');
 btn.addEventListener('change', function(event) {
 	const _this = event.target;
+	scrollMenuMobile();
 	if(body.classList.contains('overflow')) {
 		body.classList.remove('overflow');
 		body.style.overflowY = 'auto';
@@ -49,36 +50,70 @@ tab.forEach(function(item) {
 	})
 })
 
-if(window.outerWidth < 767) {
-	const heightMenu = document.querySelector('.btn-check .block-menu .max-width').offsetHeight;
-	document.querySelector('.btn-check .block-menu .max-width').scrollTo(0, -heightMenu);
-
-	if(document.querySelector('body.other .av_banner nav.banner-menu') !== null) {
-		const text = document.querySelector('body.other .av_banner nav.banner-menu .link.active').innerText;
-		document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
-		
-		const mobileBmenu = document.querySelector('body.other .av_banner nav.banner-menu .mobile-bmenu');
-		mobileBmenu.addEventListener('click', function(event) {
-			const _this = event.currentTarget;
-			if(_this.classList.contains('active')) {
-				_this.classList.remove('active');
-			} else {
-				_this.classList.add('active');
-			}
-		});
-
-		const mLink = document.querySelectorAll('nav.banner-menu .link');
-		mLink.forEach(function(item) {
-			item.addEventListener('click', function(event) {
-				const _this = event.currentTarget;
-				document.querySelector('body.other .av_banner nav.banner-menu .link.active').classList.remove('active');
-				_this.classList.add('active');
-
-				let text = _this.innerText;
-				
-				document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
-				mobileBmenu.classList.remove('active');
-			})
-		})
+function scrollMenuMobile() {
+	if(window.outerWidth < 767) {
+		const heightMenu = document.querySelector('.btn-check .block-menu .max-width').offsetHeight;
+		const scrollHeightMenu = document.querySelector('.btn-check .block-menu .max-width').scrollHeight;
+		const resultScroll = scrollHeightMenu - heightMenu;
+		document.querySelector('.btn-check .block-menu .max-width').scrollTo(0, -resultScroll);
 	}
+}
+
+function bannerMenuMobile() {
+	if(window.outerWidth < 1030) {
+
+		if(document.querySelector('body.other .av_banner nav.banner-menu') !== null) {
+			const text = document.querySelector('body.other .av_banner nav.banner-menu .link.active').innerText;
+			document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
+			
+			const mobileBmenu = document.querySelector('body.other .av_banner nav.banner-menu .mobile-bmenu');
+			mobileBmenu.addEventListener('click', function(event) {
+				const _this = event.currentTarget;
+				if(_this.classList.contains('active')) {
+					_this.classList.remove('active');
+				} else {
+					_this.classList.add('active');
+				}
+			});
+
+			const mLink = document.querySelectorAll('nav.banner-menu .link');
+			mLink.forEach(function(item) {
+				item.addEventListener('click', function(event) {
+					const _this = event.currentTarget;
+					document.querySelector('body.other .av_banner nav.banner-menu .link.active').classList.remove('active');
+					_this.classList.add('active');
+
+					let text = _this.innerText;
+					
+					document.querySelector('body.other .av_banner nav.banner-menu .page-now').innerText = text.trim();
+					mobileBmenu.classList.remove('active');
+				})
+			})
+		}
+	}
+}
+bannerMenuMobile();
+
+function seoPageImageLeft() {
+	if(window.outerWidth > 1500) {
+		const left = document.querySelector('body.other .av_hacemos .block-image').offsetLeft;
+		const width = document.querySelector('body.other .av_hacemos .block-image').offsetWidth;
+		const windowWidth = window.innerWidth;
+		const result = windowWidth - (left + width);
+		document.querySelector('body.other .av_hacemos .block-image').style.marginRight = -result + 'px';
+	}
+}
+seoPageImageLeft();
+
+if(window.outerWidth > 1500) {
+	window.addEventListener('resize', function(e) {
+		const leftBlock = document.querySelector('.av_command-result .max-width-title');
+		if(leftBlock !== null) {
+			const margLeft = window.getComputedStyle(document.querySelector('.av_command-result__list'));
+			const res = leftBlock.offsetLeft - (parseFloat(margLeft.marginLeft.replace('px', '')) + parseFloat(margLeft.paddingLeft.replace('px', '')));
+			console.log('res', (parseFloat(margLeft.marginLeft.replace('px', '')) + parseFloat(margLeft.paddingLeft.replace('px', ''))));
+			document.querySelector('.av_command-result__list .item').style.paddingLeft = res + 'px';
+			
+		}
+	})
 }
