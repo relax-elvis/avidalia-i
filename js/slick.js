@@ -567,7 +567,7 @@
             );
 
             for(a = 0; a < numOfSlides; a++){
-                var slide = document.createElement('a');
+                var slide = document.createElement('div');
                 for(b = 0; b < _.options.rows; b++) {
                     var row = document.createElement('div');
                     for(c = 0; c < _.options.slidesPerRow; c++) {

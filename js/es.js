@@ -96,11 +96,14 @@ bannerMenuMobile();
 
 function seoPageImageLeft() {
 	if(window.outerWidth > 1500) {
-		const left = document.querySelector('body.other .av_hacemos .block-image').offsetLeft;
-		const width = document.querySelector('body.other .av_hacemos .block-image').offsetWidth;
-		const windowWidth = window.innerWidth;
-		const result = windowWidth - (left + width);
-		document.querySelector('body.other .av_hacemos .block-image').style.marginRight = -result + 'px';
+		if(document.querySelector('body.other .av_hacemos .block-image') !== null && document.querySelector('body.other .av_hacemos .block-image') !== null) {
+			const left = document.querySelector('body.other .av_hacemos .block-image').offsetLeft;
+			const width = document.querySelector('body.other .av_hacemos .block-image').offsetWidth;
+			const windowWidth = window.innerWidth;
+			const result = windowWidth - (left + width);
+			document.querySelector('body.other .av_hacemos .block-image').style.marginRight = -result + 'px';
+		}
+		
 	}
 }
 seoPageImageLeft();

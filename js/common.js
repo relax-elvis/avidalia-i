@@ -257,6 +257,17 @@ $(document).ready(function() {
 		return false;
 	});
 
+
+	const navMenu = $('nav.banner-menu').width();
+	const navMenuTitle = $('body.other .av_banner nav.banner-menu .title').width();
+	const navMenuBlockLinks = $('nav.banner-menu .block').width();
+	const sumWidthB = parseFloat(navMenuTitle + navMenuBlockLinks);
+
+	if(navMenu < sumWidthB) {
+		$('nav.banner-menu .block').fadeOut();
+	} 
+	
+
 	
 
 	$('.p_tab .item').click(function() {
@@ -288,6 +299,31 @@ $(document).ready(function() {
 				scrollToViewTab(this);
 			}
 		}
+	});
+
+	$('.desarrollo-web .av_servicios .casos_slider').slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: false,
+		variableWidth: true,
+		centerPadding: '13px',
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1520,
+		// 		settings: {
+		// 			slidesToShow: 3,
+		// 			controls: true
+		// 		}
+		// 	},
+		// 	{
+		// 		breakpoint: 1024,
+		// 		settings: {
+		// 			slidesToShow: 3,
+		// 		}
+		// 	}
+		// ]
 	});
 
 
