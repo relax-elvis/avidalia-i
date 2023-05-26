@@ -391,7 +391,7 @@
 					</div>
 					<div class="col-lg-8 col-md-6">
 						<!-- tab-links -->
-						<div class="tab-links">
+						<div class="tab-links hide-in-mobile">
 							<!-- item -->
 							<div class="item">
 								<div class="block">
@@ -461,6 +461,88 @@
 							<!-- /item -->
 						</div>
 						<!-- /tab-links -->
+						<div class="tab tab-links only-mobile">
+							<details class="item">
+								<summary>
+									<div class="block">
+										<div class="block-icon">
+											<img src="img/desarrollo-page/diseno-web/code.png" alt="">
+										</div>
+										<div class="text">
+											<h3>
+												Web completamente a medida
+												<span class="icon red-arrow"></span>
+											</h3>
+										</div>
+									</div>
+								</summary>
+								<article>
+									<p>
+										Creamos todo tipo webs rápidas y de diseño que convierten desde 0
+									</p>
+								</article>
+							</details>
+							<details class="item">
+								<summary>
+									<div class="block">
+										<div class="block-icon">
+											<img src="img/desarrollo-page/diseno-web/avatar.png" alt="">
+										</div>
+										<div class="text">
+											<h3>
+												Tu cliente cómo centro de negocio
+												<span class="icon red-arrow"></span>
+											</h3>
+										</div>
+									</div>
+								</summary>
+								<article>
+									<p>
+										Realizamos una web basada en los objetivos que quieras, leads, formularios…
+									</p>
+								</article>
+							</details>
+							<details class="item">
+								<summary>
+									<div class="block">
+										<div class="block-icon">
+											<img src="img/desarrollo-page/diseno-web/rocket.png" alt="">
+										</div>
+										<div class="text">
+											<h3>
+												Ajustado a tus verdaderas necesidades
+												<span class="icon red-arrow"></span>
+											</h3>
+										</div>
+									</div>
+								</summary>
+								<article>
+									<p>
+										Creamos todo tipo webs rápidas y de diseño que convierten desde 0
+									</p>
+								</article>
+							</details>
+							<details class="item">
+								<summary>
+									<div class="block">
+										<div class="block-icon">
+											<img src="img/desarrollo-page/diseno-web/speaker.png" alt="">
+										</div>
+										<div class="text">
+											<h3>
+												Tu negocio siempre visible
+												<span class="icon red-arrow"></span>
+											</h3>
+										</div>
+									</div>
+								</summary>
+								<article>
+									<p>
+										Creamos todo tipo webs rápidas y de diseño que convierten desde 0
+									</p>
+								</article>
+							</details>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -469,7 +551,10 @@
 		<!-- av_screen-info -->
 		<section class="av_screen-info">
 			<div class="block-image-mobile">
-				<img src="img/desarrollo-page/image-2.jpg" alt="">
+				<picture>
+					<source srcset="img/desarrollo-page/image-2-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/desarrollo-page/image-2.jpg" alt="">
+				</picture>
 			</div>
 			<div class="container-fluid">
 				<div class="row">
@@ -500,7 +585,7 @@
 							Servicios
 						</h3>
 						<!-- block-btn -->
-						<div class="block-btn">
+						<div class="block-btn hide-in-mobile">
 							<a class="btn go-form" href="#form">
 								Solicitar información
 							</a>
@@ -524,6 +609,13 @@
 								Crea la mejor imagen de marca y un negocio online rentable con Avidalia, ofrecemos una página 360º con nuestras páginas web profesionales. Un diseño innovador que destaca y completamente orientado a resultados.
 							</p>
 						</article>
+						<!-- block-btn -->
+						<div class="block-btn only-mobile">
+							<a class="btn go-form" href="#form">
+								Solicitar información
+							</a>
+						</div>
+						<!-- /block-btn -->
 					</div>
 				</div>
 			</div>
@@ -1288,6 +1380,14 @@
 			speed: 300,
 			slidesToShow: 1.6,
 			centerMode: false,
+			responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1.2
+					}
+				}
+			]
 			// variableWidth: true,
 			// centerPadding: '50px'
 		});
