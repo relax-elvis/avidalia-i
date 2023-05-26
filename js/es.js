@@ -1,3 +1,13 @@
+document.querySelectorAll('.go-form').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 function f_scroll() {
 	const header = document.querySelector('header');
 	const logo = document.querySelector('header .logotype img');
