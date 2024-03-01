@@ -198,6 +198,37 @@
 	<main>
 		<!-- av_banner -->
 		<section class="av_banner">
+			<!-- av_banner-image -->
+			<style>
+				.av_banner > .container,
+				.av_banner > .container-fluid {
+					position: relative;
+					z-index: 2;
+				}
+				.av_banner-image {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 1;
+				}
+
+				.av_banner-image img {
+					height: 100%;
+					object-fit: cover;
+				}
+			</style>
+			<div class="av_banner-image">
+				<picture>
+					<source srcset="https://www.avidalia.com/assets/img/banners/TABLE/Agencia-Google-Ads.jpg" media="(max-width: 1024px)" />
+					<source srcset="https://www.avidalia.com/assets/img/banners/MOBILE/Agencia-Google-Ads.jpg" media="(max-width: 767px)" />
+					<img src="https://www.avidalia.com/assets/img/banners/Agencia-Google-Ads.jpg" alt="">
+				</picture>
+			</div>
+			<!-- /av_banner-image -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
